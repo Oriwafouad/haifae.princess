@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Website Icon" type="png" href="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2015%2F07%2Fhello-kitty.jpg&q=60">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Haifae Princess Hello Kitty</title>
+</head>
+<body>
+    <div class="logo">
+        <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F6%2F2015%2F07%2Fhello-kitty.jpg&q=60" alt="Calculator Logo">
+    </div>
+
+    <div class="calculator">
+        <input type="text" id="display" disabled>
+        <div class="buttons">
+            <button class="num-btn" onclick="appendToDisplay('7')">7</button>
+            <button class="num-btn" onclick="appendToDisplay('8')">8</button>
+            <button class="num-btn" onclick="appendToDisplay('9')">9</button>
+            <button class="operator-btn" onclick="appendToDisplay('+')">+</button>
+            <button class="num-btn" onclick="appendToDisplay('4')">4</button>
+            <button class="num-btn" onclick="appendToDisplay('5')">5</button>
+            <button class="num-btn" onclick="appendToDisplay('6')">6</button>
+            <button class="operator-btn" onclick="appendToDisplay('-')">-</button>
+            <button class="num-btn" onclick="appendToDisplay('1')">1</button>
+            <button class="num-btn" onclick="appendToDisplay('2')">2</button>
+            <button class="num-btn" onclick="appendToDisplay('3')">3</button>
+            <button class="operator-btn" onclick="appendToDisplay('*')">X</button>
+            <button class="num-btn" onclick="appendToDisplay('0')">0</button>
+            <button class="num-btn" onclick="appendToDisplay('.')">.</button>
+            <button class="operator-btn" onclick="appendToDisplay('%')">%</button>
+            <button class="operator-btn" onclick="appendToDisplay('÷')">÷</button>
+            <button class="calculate-btn" onclick="calculate()">=</button>
+            <button class="clear-btn" onclick="clearDisplay()">C</button>
+            <button class="operator-btn" onclick="backspace()">←</button>
+            <button class="operator-btn" onclick="appendToDisplay('**')">^</button>
+            <button class="operator-btn" onclick="calculateSquareRoot()">√</button>
+            <button class="operator-btn" onclick="memoryStore()">M+</button>
+            <button class="operator-btn" onclick="memoryRecall()">MR</button>
+            <button class="operator-btn" onclick="memoryClear()">MC</button>
+            <button class="operator-btn" onclick="appendToDisplay('sin(')">sin</button>
+            <button class="operator-btn" onclick="appendToDisplay('cos(')">cos</button>
+            <button class="operator-btn" onclick="appendToDisplay('tan(')">tan</button>
+            <button class="operator-btn" onclick="appendToDisplay('log(')">log</button>
+            <button class="operator-btn" onclick="appendToDisplay('exp(')">exp</button>
+            <button class="operator-btn" onclick="appendToDisplay('pi')">π</button>
+            <button class="operator-btn" onclick="memorySubtract()">M-</button>
+            <button class="operator-btn" onclick="appendToDisplay('asin(')">asin</button>
+            <button class="operator-btn" onclick="appendToDisplay('acos(')">acos</button>
+            <button class="operator-btn" onclick="appendToDisplay('atan(')">atan</button>
+            <button class="operator-btn" onclick="appendToDisplay('log10(')">log10</button>
+            <button class="operator-btn" onclick="appendToDisplay('!')">!</button>
+            <button class="operator-btn" onclick="appendToDisplay('abs(')">abs</button>
+            <button class="operator-btn" onclick="appendToDisplay('10**')">10^</button>
+            <button class="operator-btn" onclick="appendToDisplay('e')">e</button>
+            <button class="operator-btn" onclick="appendToDisplay('ceil(')">ceil</button>
+            <button class="operator-btn" onclick="appendToDisplay('floor(')">floor</button>
+            <button class="operator-btn" onclick="appendToDisplay('round(')">round</button>
+            <button class="operator-btn" onclick="appendToDisplay('min(')">min</button>
+            <button class="operator-btn" onclick="appendToDisplay('max(')">max</button>
+            <button class="operator-btn" onclick="calculateMemoryClear()">MCLR</button>
+            <button class="operator-btn" onclick="appendToDisplay('(')">(</button>
+            <button class="operator-btn" onclick="appendToDisplay(')')">)</button>
+            <button class="operator-btn" onclick="appendToDisplay('rand()')">rand</button>
+            <button class="operator-btn" onclick="calculateMemorySubtract()">M-</button>
+            <button class="operator-btn" onclick="calculateMemoryRecallSubtract()">MR-</button>
+            <button class="operator-btn" onclick="appendToDisplay('**2')">^2</button>
+            <button class="operator-btn" onclick="appendToDisplay('sqrt(')">√</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
